@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche Brewing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="overlay" id="overlay">
+        <div class="ov-top">
+            <span class="ov-brand">PORSCHE</span>
+            <button class="ov-close" onclick="closeMenu()">&#x2715;</button>
+        </div>
+        <ul class="ov-nav">
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="cayenne.html">Cayenne S+V</a></li>
+            <li><a href="gt3.html">911 GT3</a></li>
+            <li><a href="panamera.html">Panamera Comfort</a></li>
+            <li><a href="#">Zubehör</a></li>
+            <li><a href="#">Händler</a></li>
+        </ul>
+    </div>
+
+    <nav id="nav" class="dark">
+        <div class="nav-left">
+            <button class="nav-menu-btn" onclick="openMenu()">
+                <div class="ham"><i></i><i></i><i></i></div>
+                <span class="lbl">Menü</span>
+            </button>
+        </div>
+        <span class="nav-brand">PORSCHE</span>
+        <div class="nav-right">
+            <button class="nav-icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
+                    <circle cx="10" cy="10" r="8" stroke="white" stroke-width=".85" />
+                    <ellipse cx="10" cy="10" rx="3.8" ry="8" stroke="white" stroke-width=".85" />
+                    <line x1="2" y1="10" x2="18" y2="10" stroke="white" stroke-width=".85" />
+                </svg>
+            </button>
+            <button class="nav-icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
+                    <circle cx="10" cy="7.5" r="3.5" stroke="white" stroke-width=".85" />
+                    <path d="M3 18c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="white" stroke-width=".85"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div id="scroller">
+
+        <div class="panel p-hero" data-theme="dark">
+            <div class="panel-bg"
+                style="background-image: url('images/Espresso_machine_pouring_espresso_202606160926.mp4');"></div>
+            <div class="hero-grad"></div>
+            <div class="panel-body">
+                <p class="panel-eyebrow">Limitierte Edition · 001/911</p>
+                <h1 class="panel-title">Die neue<br>911 GT3</h1>
+                <p class="panel-sub">Street&amp;Coffee</p>
+                <a href="#" class="btn-glass">Mehr erfahren</a>
+            </div>
+            <div class="hero-arrow">
+                <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
+                    <path d="M10 4v12M5 11l5 5 5-5" stroke="white" stroke-width=".9" stroke-linecap="round" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="panel p-thumbs" data-theme="light">
+            <div class="thumbs-row">
+                <div class="thumb">
+                    <div class="thumb-bg" style="background-image: url('images/cayenne.png');"></div>
+                    <div class="thumb-label">Cayenne S+V</div>
+                </div>
+                <div class="thumb">
+                    <div class="thumb-bg" style="background-image: url('images/panamera.png');"></div>
+                    <div class="thumb-label">Panamera Comfort</div>
+                </div>
+                <div class="thumb">
+                    <div class="thumb-bg" style="background-image: url('images/gt3.png');"></div>
+                    <div class="thumb-label">911 GT3C</div>
+                </div>
+            </div>
+            <div class="specs-text">
+                Cayenne S+V: 2 Gruppen · 3 Auslässe · 45 mm · Energieklasse A ·
+                Panamera Comfort: Behältergröße 500 g · Reinigungsprogramm: Auto, Clean, Kaltbrause ·
+                911 GT3C: Druck 9 bar konstant · Gewicht 18 kg
+            </div>
+        </div>
+
+        <div class="panel p-claim" data-theme="light">
+            <h2>Ihre Porsche Essenz beginnt jetzt.</h2>
+        </div>
+
+        <div class="panel p-finder" data-theme="light">
+            <div class="finder-left">
+                <h3>Finden Sie Ihre Porsche<br>Brewing Performance.</h3>
+                <p>Ob für die Heimbar oder die professionelle Küche.</p>
+                <small>Geben Sie einen Ort für Ihre Suche an:</small>
+                <div class="finder-input">
+                    <input type="text" placeholder="PLZ oder Ort">
+                </div>
+            </div>
+            <div class="finder-right">
+                <img src="images/lineup.png" alt="Alle Modelle">
+            </div>
+        </div>
+
+        <div class="panel p-zub-header" data-theme="dark">
+            <div class="zub-bg" style="background-image: url('images/zubehoer.png');"></div>
+            <div class="zub-grad"></div>
+            <div class="zub-content">
+                <h2>Entdecken Sie Porsche<br>Zubehör</h2>
+                <a href="#" class="btn-outline-white">Zum Onlineshop</a>
+            </div>
+        </div>
+
+        <div class="panel p-zub-tiles" data-theme="dark">
+            <div class="ztile">
+                <div class="ztile-bg" style="background-image: url('images/accessories.png');"></div>
+                <div class="ztile-foot">
+                    <span class="ztile-label">Maschinenzubehör</span>
+                </div>
+            </div>
+            <div class="ztile">
+                <div class="ztile-bg" style="background-image: url('images/roastery.png');"></div>
+                <div class="ztile-foot">
+                    <span class="ztile-label">Roastery &amp; Flavours</span>
+                </div>
+            </div>
+            <div class="ztile">
+                <div class="ztile-bg" style="background-image: url('images/barista.png');"></div>
+                <div class="ztile-foot">
+                    <span class="ztile-label">Barista &amp; Lifestyle</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel p-footer" data-theme="dark">
+            <div class="footer-back">
+                <button class="back-btn" onclick="goTo(0)">Nach oben</button>
+            </div>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Aktuelle Region / Sprache</h4>
+                    <a href="#">Deutschland / Deutsch</a>
+                    <a href="#">Ändern</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Unternehmen</h4>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Karriere</a>
+                    <a href="#">Newsroom &amp; Presse</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Porsche im Web</h4>
+                    <a href="#">Porsche Homepage</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Porsche Konfigurator</a>
+                </div>
+            </div>
+            <p class="footer-legal">© 2026 Porsche Brewing GmbH · Impressum · Datenschutz</p>
+        </div>
+
+    </div>
+
+    <div id="dots"></div>
+    <div id="scrollHint">
+        <svg width="18" height="18" fill="none" viewBox="0 0 18 18">
+            <path d="M9 3v12M4 10l5 5 5-5" stroke="white" stroke-width=".9" stroke-linecap="round" />
+        </svg>
+        <span>Scrollen</span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
