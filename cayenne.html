@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cayenne S+V | Porsche Brewing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body class="product-page">
+
+    <nav id="nav" class="dark">
+        <div class="nav-left">
+            <button class="nav-menu-btn" onclick="openMenu()">
+                <div class="ham"><i></i><i></i><i></i></div>
+                <span class="lbl">Menü</span>
+            </button>
+        </div>
+        <span class="nav-brand">PORSCHE</span>
+        <div class="nav-right">
+            <button class="nav-icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
+                    <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width=".85" />
+                    <ellipse cx="10" cy="10" rx="3.8" ry="8" stroke="currentColor" stroke-width=".85" />
+                    <line x1="2" y1="10" x2="18" y2="10" stroke="currentColor" stroke-width=".85" />
+                </svg>
+            </button>
+            <button class="nav-icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
+                    <circle cx="10" cy="7.5" r="3.5" stroke="currentColor" stroke-width=".85" />
+                    <path d="M3 18c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="currentColor" stroke-width=".85"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay">
+        <div class="ov-top">
+            <span class="ov-brand">PORSCHE</span>
+            <button class="ov-close" onclick="closeMenu()">&#x2715;</button>
+        </div>
+        <ul class="ov-nav">
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="cayenne.html">Cayenne S+V</a></li>
+            <li><a href="gt3.html">911 GT3</a></li>
+            <li><a href="panamera.html">Panamera Comfort</a></li>
+            <li><a href="#">Zubehör</a></li>
+            <li><a href="#">Händler</a></li>
+        </ul>
+    </div>
+
+    <section class="prod-hero">
+        <div class="prod-hero-bg" style="background-image: url('images/cayenne-detail.png');"></div>
+        <div class="prod-hero-grad"></div>
+        <div class="prod-hero-content">
+            <p class="prod-eyebrow">Cayenne S+V · 2025</p>
+            <h1 class="prod-title">Cayenne S+V</h1>
+            <p class="prod-price">Ab EUR 4.800,00 inkl. MwSt.</p>
+            <div class="prod-hero-tags">
+                <span class="tag">2025</span>
+                <span class="tag">Espresso</span>
+                <span class="tag">2 Gruppen</span>
+                <span class="tag">Automatik</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="prod-specs-bar">
+        <div class="spec-item">
+            <span class="spec-value" data-target="3.2" data-suffix=" s">0 s</span>
+            <span class="spec-label">Aufheizzeit 0–90°C</span>
+        </div>
+        <div class="spec-divider"></div>
+        <div class="spec-item">
+            <span class="spec-value" data-target="9" data-suffix=" bar">0 bar</span>
+            <span class="spec-label">Brühdruck konstant</span>
+        </div>
+        <div class="spec-divider"></div>
+        <div class="spec-item">
+            <span class="spec-value" data-target="2" data-suffix=" Gruppen">0 Gruppen</span>
+            <span class="spec-label">Auslässe</span>
+        </div>
+        <div class="spec-divider"></div>
+        <div class="spec-item">
+            <span class="spec-value" data-target="45" data-suffix=" mm">0 mm</span>
+            <span class="spec-label">Siebträgerdurchmesser</span>
+        </div>
+    </section>
+
+    <section class="prod-variants">
+        <div class="variants-header">
+            <h2>Cayenne S+V Modellvarianten</h2>
+            <a href="#" class="variants-compare">↔ Modellvarianten vergleichen</a>
+        </div>
+        <div class="variants-grid">
+            <div class="variant-card active">
+                <div class="variant-img" style="background-image: url('images/cayenne.blue.png');"></div>
+                <div class="variant-info">
+                    <h3>Cayenne S</h3>
+                    <p class="variant-price">Ab EUR 4.800,00 inkl. MwSt.</p>
+                    <p class="variant-monthly">z.B. 62,00 € mtl.</p>
+                    <div class="variant-tags">
+                        <span class="tag">2025</span>
+                        <span class="tag">Espresso</span>
+                        <span class="tag">2 Gruppen</span>
+                    </div>
+                    <div class="variant-specs">
+                        <div class="vs-row">
+                            <span class="vs-val">3.2 s</span>
+                            <span class="vs-lbl">Aufheizzeit 0–90°C</span>
+                        </div>
+                        <div class="vs-row">
+                            <span class="vs-val">9 bar</span>
+                            <span class="vs-lbl">Brühdruck konstant</span>
+                        </div>
+                        <div class="vs-row">
+                            <span class="vs-val">A</span>
+                            <span class="vs-lbl">Energieklasse</span>
+                        </div>
+                    </div>
+                    <div class="variant-actions">
+                        <a href="#" class="btn-primary">Jetzt konfigurieren</a>
+                        <a href="#" class="btn-secondary">Händler finden</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="variant-card">
+                <div class="variant-img" style="background-image: url('images/cayenne-extra.png');"></div>
+                <div class="variant-info">
+                    <h3>Cayenne S+V</h3>
+                    <p class="variant-price">Ab EUR 5.900,00 inkl. MwSt.</p>
+                    <p class="variant-monthly">z.B. 76,00 € mtl.</p>
+                    <div class="variant-tags">
+                        <span class="tag">2025</span>
+                        <span class="tag">Espresso</span>
+                        <span class="tag">3 Gruppen</span>
+                    </div>
+                    <div class="variant-specs">
+                        <div class="vs-row">
+                            <span class="vs-val">2.8 s</span>
+                            <span class="vs-lbl">Aufheizzeit 0–90°C</span>
+                        </div>
+                        <div class="vs-row">
+                            <span class="vs-val">9 bar</span>
+                            <span class="vs-lbl">Brühdruck konstant</span>
+                        </div>
+                        <div class="vs-row">
+                            <span class="vs-val">A+</span>
+                            <span class="vs-lbl">Energieklasse</span>
+                        </div>
+                    </div>
+                    <div class="variant-actions">
+                        <a href="#" class="btn-primary">Jetzt konfigurieren</a>
+                        <a href="#" class="btn-secondary">Händler finden</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="prod-detail">
+        <div class="prod-detail-left">
+            <img src="images/cayenne-nah.png" alt="Cayenne S+V">
+        </div>
+        <div class="prod-detail-right">
+            <p class="prod-year-tag">2025 · Espresso · 2 Gruppen · Automatik</p>
+            <h2>Cayenne S+V</h2>
+            <p class="prod-desc">
+                Die Cayenne S+V Kaffeemaschine vereint höchste Präzision mit elegantem Design.
+                Zwei Brühgruppen, konstanter 9-bar-Druck und eine Aufheizzeit von nur 3,2 Sekunden
+                setzen neue Maßstäbe in der Heimbarista-Kultur.
+            </p>
+            <div class="prod-spec-list">
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Aufheizzeit 0–90°C</span>
+                    <span class="psr-val">3.2 s</span>
+                </div>
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Brühdruck konstant</span>
+                    <span class="psr-val">9 bar</span>
+                </div>
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Gewicht</span>
+                    <span class="psr-val">18 kg</span>
+                </div>
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Bohnenbehälter</span>
+                    <span class="psr-val">500 g</span>
+                </div>
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Siebträgerdurchmesser</span>
+                    <span class="psr-val">45 mm</span>
+                </div>
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Auslässe</span>
+                    <span class="psr-val">3</span>
+                </div>
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Energieklasse</span>
+                    <span class="psr-val">A</span>
+                </div>
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Reinigungsprogramm</span>
+                    <span class="psr-val">Auto · Clean · Kaltbrause</span>
+                </div>
+            </div>
+            <div class="prod-actions">
+                <a href="#" class="btn-primary">Jetzt konfigurieren</a>
+                <a href="#" class="btn-secondary">Händler finden</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="prod-more">
+        <h3>Weitere Modelle</h3>
+        <div class="prod-more-grid">
+            <a href="gt3.html" class="prod-more-card">
+                <div class="prod-more-img" style="background-image: url('images/gt3.png');"></div>
+                <span>911 GT3</span>
+            </a>
+            <a href="panamera.html" class="prod-more-card">
+                <div class="prod-more-img" style="background-image: url('images/panamera.png');"></div>
+                <span>Panamera Comfort</span>
+            </a>
+        </div>
+    </section>
+
+    <script>
+        function openMenu() {
+            document.getElementById('overlay').classList.add('open');
+        }
+        function closeMenu() {
+            document.getElementById('overlay').classList.remove('open');
+        }
+        document.getElementById('nav').className = 'light';
+
+        // ── COUNT UP ANIMATION ──
+        function countUp(el, target, duration, suffix) {
+            let start = 0;
+            const isDecimal = !Number.isInteger(target);
+            const step = target / (duration / 16);
+            const timer = setInterval(() => {
+                start += step;
+                if (start >= target) {
+                    start = target;
+                    clearInterval(timer);
+                }
+                el.textContent = isDecimal
+                    ? start.toFixed(1) + suffix
+                    : Math.floor(start) + suffix;
+            }, 16);
+        }
+
+        const bar = document.querySelector('.prod-specs-bar');
+        let animated = false;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !animated) {
+                    animated = true;
+                    document.querySelectorAll('.spec-value[data-target]').forEach(el => {
+                        const target = parseFloat(el.dataset.target);
+                        const suffix = el.dataset.suffix;
+                        countUp(el, target, 1500, suffix);
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+
+        observer.observe(bar);
+    </script>
+</body>
+
+</html>

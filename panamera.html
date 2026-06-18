@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panamera Comfort | Porsche Brewing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body class="product-page">
+
+    <nav id="nav" class="dark">
+        <div class="nav-left">
+            <button class="nav-menu-btn" onclick="openMenu()">
+                <div class="ham"><i></i><i></i><i></i></div>
+                <span class="lbl">Menü</span>
+            </button>
+        </div>
+        <span class="nav-brand">PORSCHE</span>
+        <div class="nav-right">
+            <button class="nav-icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
+                    <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width=".85" />
+                    <ellipse cx="10" cy="10" rx="3.8" ry="8" stroke="currentColor" stroke-width=".85" />
+                    <line x1="2" y1="10" x2="18" y2="10" stroke="currentColor" stroke-width=".85" />
+                </svg>
+            </button>
+            <button class="nav-icon">
+                <svg width="20" height="20" fill="none" viewBox="0 0 20 20">
+                    <circle cx="10" cy="7.5" r="3.5" stroke="currentColor" stroke-width=".85" />
+                    <path d="M3 18c0-3.866 3.134-7 7-7s7 3.134 7 7" stroke="currentColor" stroke-width=".85"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay">
+        <div class="ov-top">
+            <span class="ov-brand">PORSCHE</span>
+            <button class="ov-close" onclick="closeMenu()">&#x2715;</button>
+        </div>
+        <ul class="ov-nav">
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="cayenne.html">Cayenne S+V</a></li>
+            <li><a href="gt3.html">911 GT3</a></li>
+            <li><a href="panamera.html">Panamera Comfort</a></li>
+            <li><a href="#">Zubehör</a></li>
+            <li><a href="#">Händler</a></li>
+        </ul>
+    </div>
+
+    <!-- HERO -->
+    <section class="prod-hero">
+        <div class="prod-hero-bg" style="background-image: url('images/panamera-titel.png');"></div>
+        <div class="prod-hero-grad"></div>
+        <div class="prod-hero-content">
+            <p class="prod-eyebrow">Panamera Comfort · 2025</p>
+            <h1 class="prod-title">Panamera Comfort</h1>
+            <p class="prod-price">Ab EUR 3.200,00 inkl. MwSt. &nbsp;|&nbsp; z.B. 42,00 € mtl.</p>
+            <div class="prod-hero-tags">
+                <span class="tag">2025</span>
+                <span class="tag">Espresso</span>
+                <span class="tag">Vollautomatik</span>
+                <span class="tag">Comfort</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPECS BAR -->
+    <section class="prod-specs-bar">
+        <div class="spec-item">
+            <span class="spec-value" data-target="4.5" data-suffix=" s">0 s</span>
+            <span class="spec-label">Aufheizzeit 0–90°C</span>
+        </div>
+        <div class="spec-divider"></div>
+        <div class="spec-item">
+            <span class="spec-value" data-target="9" data-suffix=" bar">0 bar</span>
+            <span class="spec-label">Brühdruck konstant</span>
+        </div>
+        <div class="spec-divider"></div>
+        <div class="spec-item">
+            <span class="spec-value" data-target="500" data-suffix=" g">0 g</span>
+            <span class="spec-label">Bohnenbehälter</span>
+        </div>
+        <div class="spec-divider"></div>
+        <div class="spec-item">
+            <span class="spec-value" data-target="12" data-suffix=" kg">0 kg</span>
+            <span class="spec-label">Gewicht</span>
+        </div>
+    </section>
+
+    <!-- MODELLVARIANTEN -->
+    <section class="prod-variants">
+        <div class="variants-header">
+            <h2>Panamera Comfort Modellvarianten</h2>
+            <a href="#" class="variants-compare">↔ Modellvarianten vergleichen</a>
+        </div>
+        <div class="variants-grid">
+            <div class="variant-card active">
+                <div class="variant-img" style="background-image: url('images/panamera-detail.png');"></div>
+                <div class="variant-info">
+                    <h3>Panamera Comfort</h3>
+                    <p class="variant-price">Ab EUR 3.200,00 inkl. MwSt.</p>
+                    <p class="variant-monthly">z.B. 42,00 € mtl.</p>
+                    <div class="variant-tags">
+                        <span class="tag">2025</span>
+                        <span class="tag">Espresso</span>
+                        <span class="tag">Vollautomatik</span>
+                    </div>
+                    <div class="variant-specs">
+                        <div class="vs-row">
+                            <span class="vs-val">4.5 s</span>
+                            <span class="vs-lbl">Aufheizzeit 0–90°C</span>
+                        </div>
+                        <div class="vs-row">
+                            <span class="vs-val">9 bar</span>
+                            <span class="vs-lbl">Brühdruck konstant</span>
+                        </div>
+                        <div class="vs-row">
+                            <span class="vs-val">A</span>
+                            <span class="vs-lbl">Energieklasse</span>
+                        </div>
+                    </div>
+                    <div class="variant-actions">
+                        <a href="#" class="btn-primary">Jetzt konfigurieren</a>
+                        <a href="#" class="btn-secondary">Händler finden</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="variant-card">
+                <div class="variant-img" style="background-image: url('images/panamera-rot.png');"></div>
+                <div class="variant-info">
+                    <h3>Panamera Comfort Plus</h3>
+                    <p class="variant-price">Ab EUR 4.100,00 inkl. MwSt.</p>
+                    <p class="variant-monthly">z.B. 54,00 € mtl.</p>
+                    <div class="variant-tags">
+                        <span class="tag">2025</span>
+                        <span class="tag">Espresso</span>
+                        <span class="tag">Vollautomatik</span>
+                    </div>
+                    <div class="variant-specs">
+                        <div class="vs-row">
+                            <span class="vs-val">3.8 s</span>
+                            <span class="vs-lbl">Aufheizzeit 0–90°C</span>
+                        </div>
+                        <div class="vs-row">
+                            <span class="vs-val">9 bar</span>
+                            <span class="vs-lbl">Brühdruck konstant</span>
+                        </div>
+                        <div class="vs-row">
+                            <span class="vs-val">A+</span>
+                            <span class="vs-lbl">Energieklasse</span>
+                        </div>
+                    </div>
+                    <div class="variant-actions">
+                        <a href="#" class="btn-primary">Jetzt konfigurieren</a>
+                        <a href="#" class="btn-secondary">Händler finden</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DETAIL BEREICH -->
+    <section class="prod-detail">
+        <div class="prod-detail-left">
+            <img src="images/panamera-nah.png" alt="Panamera Comfort">
+        </div>
+        <div class="prod-detail-right">
+            <p class="prod-year-tag">2025 · Espresso · Vollautomatik · Comfort</p>
+            <h2>Panamera Comfort</h2>
+            <p class="prod-desc">
+                Die Panamera Comfort Kaffeemaschine steht für mühelosen Genuss auf höchstem Niveau.
+                Vollautomatisch, leise und präzise — perfekt für den anspruchsvollen Alltag.
+                Mit intuitivem Bedienfeld, automatischer Reinigung und konstanten 9 bar Brühdruck
+                liefert sie jeden Morgen das perfekte Ergebnis.
+            </p>
+            <div class="prod-spec-list">
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Aufheizzeit 0–90°C</span>
+                    <span class="psr-val">4.5 s</span>
+                </div>
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Brühdruck konstant</span>
+                    <span class="psr-val">9 bar</span>
+                </div>
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Gewicht</span>
+                    <span class="psr-val">12 kg</span>
+                </div>
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Bohnenbehälter</span>
+                    <span class="psr-val">500 g</span>
+                </div>
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Siebträgerdurchmesser</span>
+                    <span class="psr-val">58 mm</span>
+                </div>
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Reinigungsprogramm</span>
+                    <span class="psr-val">Auto · Clean · Kaltbrause</span>
+                </div>
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Energieklasse</span>
+                    <span class="psr-val">A</span>
+                </div>
+                <div class="prod-spec-row">
+                    <span class="psr-lbl">Geräuschpegel</span>
+                    <span class="psr-val">48 dB</span>
+                </div>
+            </div>
+            <div class="prod-actions">
+                <a href="#" class="btn-primary">Jetzt konfigurieren</a>
+                <a href="#" class="btn-secondary">Händler finden</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WEITERE MODELLE -->
+    <section class="prod-more">
+        <h3>Weitere Modelle</h3>
+        <div class="prod-more-grid">
+            <a href="cayenne.html" class="prod-more-card">
+                <div class="prod-more-img" style="background-image: url('images/cayenne.png');"></div>
+                <span>Cayenne S+V</span>
+            </a>
+            <a href="gt3.html" class="prod-more-card">
+                <div class="prod-more-img" style="background-image: url('images/gt3.png');"></div>
+                <span>911 GT3</span>
+            </a>
+        </div>
+    </section>
+
+    <script>
+        function openMenu() {
+            document.getElementById('overlay').classList.add('open');
+        }
+        function closeMenu() {
+            document.getElementById('overlay').classList.remove('open');
+        }
+        document.getElementById('nav').className = 'light';
+
+        // ── COUNT UP ANIMATION ──
+        function countUp(el, target, duration, suffix) {
+            let start = 0;
+            const isDecimal = !Number.isInteger(target);
+            const step = target / (duration / 16);
+            const timer = setInterval(() => {
+                start += step;
+                if (start >= target) {
+                    start = target;
+                    clearInterval(timer);
+                }
+                el.textContent = isDecimal
+                    ? start.toFixed(1) + suffix
+                    : Math.floor(start) + suffix;
+            }, 16);
+        }
+
+        const bar = document.querySelector('.prod-specs-bar');
+        let animated = false;
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !animated) {
+                    animated = true;
+                    document.querySelectorAll('.spec-value[data-target]').forEach(el => {
+                        const target = parseFloat(el.dataset.target);
+                        const suffix = el.dataset.suffix;
+                        countUp(el, target, 1500, suffix);
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+
+        observer.observe(bar);
+    </script>
+</body>
+
+</html>
